@@ -126,7 +126,7 @@ const Login = () => {
                     <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/20 mb-6">
                         <HardHat className="text-white" size={32} />
                     </div>
-                    <h1 className="text-5xl font-bold tracking-tight mb-4">T<span className="text-amber-500">AI</span>SK</h1>
+                    <h1 className="text-5xl font-bold tracking-tight mb-4">ProBuild</h1>
                     <p className="text-xl text-slate-400 max-w-sm leading-relaxed">
                         Gestión de construcción de próxima generación. Inteligencia artificial y visualización 3D para el sitio de obra moderno.
                     </p>

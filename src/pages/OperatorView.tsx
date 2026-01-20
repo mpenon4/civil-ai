@@ -22,7 +22,7 @@ const OperatorView = () => {
                             <HardHat size={20} className="text-white" />
                         </div>
                         <div>
-                            <h1 className="font-bold text-lg">T<span className="text-amber-500">AI</span>SK</h1>
+                            <h1 className="font-bold text-lg">ProBuild</h1>
                             <p className="text-xs text-slate-400">Operador de Campo</p>
                         </div>
                     </div>

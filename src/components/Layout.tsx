@@ -19,7 +19,7 @@ export const Sidebar = (_props: { activeView: string, setView: (v: string) => vo
                     <HardHat className="text-white" size={24} />
                 </div>
                 <div>
-                    <h1 className="font-bold text-white tracking-tight">T<span className="text-amber-500">AI</span>SK</h1>
+                    <h1 className="font-bold text-white tracking-tight">ProBuild</h1>
                     <p className="text-xs text-slate-500">Manager Pro v2.0</p>
                 </div>
             </div>
