@@ -22,7 +22,7 @@ const OperatorView = () => {
                             <HardHat size={20} className="text-white" />
                         </div>
                         <div>
-                            <h1 className="font-bold text-lg">CIVIL.AI</h1>
+                            <h1 className="font-bold text-lg">T<span className="text-amber-500">AI</span>SK</h1>
                             <p className="text-xs text-slate-400">Operador de Campo</p>
                         </div>
                     </div>
@@ -61,8 +61,8 @@ const OperatorView = () => {
                             <div
                                 key={task.id}
                                 className={`bg-slate-900 rounded-xl p-4 border-l-4 ${task.priority === 'critical' ? 'border-purple-500' :
-                                        task.priority === 'high' ? 'border-red-500' :
-                                            task.status === 'blocked' ? 'border-slate-600' : 'border-blue-500'
+                                    task.priority === 'high' ? 'border-red-500' :
+                                        task.status === 'blocked' ? 'border-slate-600' : 'border-blue-500'
                                     }`}
                             >
                                 <div className="flex justify-between items-start mb-2">
