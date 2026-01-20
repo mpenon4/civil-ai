@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { Sidebar } from './components/Layout';
 import Dashboard from './pages/Dashboard';
@@ -15,10 +14,6 @@ function App() {
   const isLoginPage = location.pathname === '/';
   const isProjectHub = location.pathname === '/hub';
   const isOperatorMobile = location.pathname === '/operator';
-
-  // State to simulate "Current active View" for the Sidebar highlighting if needed, 
-  // but Router usually handles this.
-  const [activeView, setActiveView] = useState('dashboard');
 
   return (
     <div className="flex h-screen bg-slate-950 text-slate-200 overflow-hidden font-sans selection:bg-amber-500/30">

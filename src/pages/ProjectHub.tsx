@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Plus, Building2, MapPin, Users, Cloud, Copy, Check, QrCode, Share2 } from 'lucide-react';
-import { supabase, getCurrentUser, generateProjectCode } from '../lib/supabase';
+import { Plus, MapPin, Copy, Check, QrCode, Share2 } from 'lucide-react';
+import { supabase, getCurrentUser } from '../lib/supabase';
 import { getStaticMapUrl } from '../services/weatherService';
 
 interface Project {
@@ -134,7 +134,7 @@ const ProjectHub = () => {
                         {/* Map Preview */}
                         <div className="h-32 relative">
                             <img
-                                src={getStaticMapUrl(project.location_lat || 0, project.location_lng || 0, 13)}
+                                src={getStaticMapUrl({ city: project.location_city, country: 'AR', lat: project.location_lat || 0, lng: project.location_lng || 0 })}
                                 alt="Map"
                                 className="w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity"
                             />

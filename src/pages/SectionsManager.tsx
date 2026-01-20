@@ -17,21 +17,13 @@ import {
 } from 'lucide-react';
 
 const SectionsManager = () => {
-    const { sections, addSection, updateSection, deleteSection, reorderSections, assignOperators } = useProjectStore();
+    const { sections, addSection, updateSection, deleteSection, assignOperators } = useProjectStore();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [editingSection, setEditingSection] = useState<ConstructionSection | null>(null);
-    const [orderedSections, setOrderedSections] = useState(sections);
 
     // Sync local state with store when sections change
     const syncedSections = sections.sort((a, b) => a.priority - b.priority);
 
-    const handleReorder = (newOrder: ConstructionSection[]) => {
-        setOrderedSections(newOrder);
-    };
-
-    const handleReorderComplete = () => {
-        reorderSections(orderedSections.map(s => s.id));
-    };
 
     const openCreateModal = () => {
         setEditingSection(null);
@@ -97,7 +89,7 @@ const SectionsManager = () => {
             <Reorder.Group
                 axis="y"
                 values={syncedSections}
-                onReorder={handleReorder}
+                onReorder={() => { }}
                 className="space-y-4"
             >
                 <AnimatePresence>

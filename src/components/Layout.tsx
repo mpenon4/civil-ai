@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { LayoutDashboard, CalendarClock, MessageSquareText, HardHat, TrendingUp, Layers, FolderKanban } from 'lucide-react';
 
-export const Sidebar = ({ activeView, setView }: { activeView: string, setView: (v: string) => void }) => {
+export const Sidebar = (_props: { activeView: string, setView: (v: string) => void }) => {
     const items = [
         { id: 'dashboard', icon: LayoutDashboard, label: 'Control Panel', path: '/dashboard' },
         { id: 'schedule', icon: CalendarClock, label: 'Smart Schedule', path: '/schedule' },

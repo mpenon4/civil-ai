@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Layers, Maximize2, ZoomIn, ZoomOut, Download, Box, ChevronLeft, ChevronRight, Plus, Upload, X, FolderOpen, Image, FileText, Trash2 } from 'lucide-react';
+import { Layers, Maximize2, ZoomIn, ZoomOut, Download, Box, ChevronLeft, ChevronRight, Plus, Upload, X, FolderOpen, FileText, Trash2 } from 'lucide-react';
 
 // Types
 interface FileItem {

@@ -6,8 +6,7 @@ import { Umbrella, Users, Zap, AlertTriangle, CloudRain, Briefcase } from 'lucid
 const SmartSchedule = () => {
     const { tasks, weather, personnelCount, togglePersonnelShortage, optimizeSchedule } = useProjectStore();
 
-    const outdoorTasks = tasks.filter(t => t.type === 'outdoor');
-    const indoorTasks = tasks.filter(t => t.type === 'indoor');
+
 
     return (
         <div className="p-8 space-y-6 h-full overflow-y-auto text-white">
